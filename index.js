@@ -1,6 +1,14 @@
-var number1 = 10;
-var number2 = 78;
-var number3 = 45;
-var total = ++number1 + ++number1 + number2-- + ++number3 + number1 + number1-- + number1 + --number3;
-console.log(total);
-export {};
+import inquirer from "inquirer";
+import chalk from "chalk";
+var answer = await inquirer.prompt([{
+        message: "Please guess a number between 1 to 10",
+        name: "Number",
+        type: "number"
+    }]);
+var randomNumber = Math.floor(Math.random() * 10 + 1);
+if (answer.Number === randomNumber) {
+    console.log(chalk.greenBright.bold("Congratulations") + "!" + " " + "You got the right Number");
+}
+else {
+    console.log(chalk.redBright.bold("You guess a wrong number"));
+}
