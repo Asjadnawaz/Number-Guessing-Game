@@ -1,13 +1,10 @@
 {
-  "name": "@asjad/number-guessing-game",
+  "name": "125number-guessing-game",
   "version": "1.0.0",
   "description": "This is a number guessing game",
   "main": "index.js",
   "type": "module",
   "bin": "index.js",
-  "publishConfig": {
-    "access": "public"
-  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
